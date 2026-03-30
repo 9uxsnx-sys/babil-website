@@ -50,7 +50,21 @@ export default function App() {
   return (
     <div className="relative bg-white dark:bg-black min-h-screen">
       {/* Header - Absolute at the top (scrolls with page) */}
-      <header className={`${isMenuOpen ? 'fixed' : 'absolute'} top-0 left-0 right-0 z-50 flex items-center justify-end px-4 py-4 md:px-8 md:py-6 pointer-events-none`}>
+      <header className={`${isMenuOpen ? 'fixed' : 'absolute'} top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-4 md:px-8 md:py-6 pointer-events-none`}>
+        {/* Logo - Top Left */}
+        <div className="pointer-events-auto">
+          <button
+            onClick={() => handleNavigation('home')}
+            className="block"
+            aria-label="Go to home"
+          >
+            <img
+              src="/logo.svg"
+              alt="Babil Logo"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+          </button>
+        </div>
         {/* Controls - Top Right */}
         <div className="flex items-center gap-2 md:gap-4 pointer-events-auto">
           <div className={`transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
