@@ -188,11 +188,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             {/* Left: Big Numbers */}
             <div className="flex flex-col justify-between gap-12 py-6">
                 <div className="flex flex-col gap-2">
-                    <h3 className="text-8xl md:text-[8rem] font-black tracking-tighter leading-[0.8]">50+</h3>
+                    <h3 className="text-8xl md:text-[8rem] font-black tracking-tighter leading-[0.8]">100%</h3>
                     <p className="text-sm font-bold uppercase tracking-widest text-neutral-500 pl-2">{t('home.impact.projects')}</p>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <h3 className="text-8xl md:text-[8rem] font-black tracking-tighter leading-[0.8]">2x</h3>
+                    <h3 className="text-8xl md:text-[8rem] font-black tracking-tighter leading-[0.8]">Zero</h3>
                     <p className="text-sm font-bold uppercase tracking-widest text-neutral-500 pl-2">{t('home.impact.delivery')}</p>
                 </div>
                 <div className="flex flex-col gap-2">

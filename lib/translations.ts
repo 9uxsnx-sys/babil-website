@@ -16,7 +16,7 @@ export const resources = {
         start_project: "Start Project",
         our_services: "Our Services",
         stats: {
-          active_partners: "Active Partners",
+          active_partners: "Dedicated Support",
           process_opt: "Process Optimization",
           revenue_impact: "Revenue Impact"
         },
@@ -76,18 +76,18 @@ export const resources = {
           desc: "Every project comes with a warranty period, full source code ownership, and a dedicated support channel. No lock-ins, no hidden fees.",
           lifetime: "Lifetime Warranty",
           rapid: "Rapid Delivery",
-          ip: "IP Ownership"
+          ip: "Full Ownership"
         },
         impact: {
-          projects: "Enterprise Projects",
-          delivery: "Faster Delivery",
-          uptime: "System Uptime",
-          card_title: "Digital Transformation Across Industries.",
-          card_desc: "From local startups to multinational corporations, our code powers operations that serve millions of users daily. We focus on performance, security, and scalability.",
+          projects: "Custom Code",
+          delivery: "Technical Debt",
+          uptime: "Dedicated Support",
+          card_title: "Engineered for the Modern Web.",
+          card_desc: "We are a dedicated team of engineers focused on building high-performance, secure, and scalable digital infrastructure. We bring modern architecture to forward-thinking businesses.",
           list: {
             arch: "High-Performance Architecture",
             ai: "Automated Workflows",
-            security: "Bank-Grade Security"
+            security: "Grade Security"
           }
         },
         disciplines: {
@@ -223,7 +223,7 @@ export const resources = {
         start_project: "Démarrer un projet",
         our_services: "Nos Services",
         stats: {
-          active_partners: "Partenaires Actifs",
+          active_partners: "Support Dédié",
           process_opt: "Optimisation Process",
           revenue_impact: "Impact Revenus"
         },
@@ -283,18 +283,18 @@ export const resources = {
           desc: "Chaque projet inclut une garantie, la propriété du code source et un canal de support dédié. Pas de frais cachés.",
           lifetime: "Garantie à Vie",
           rapid: "Livraison Rapide",
-          ip: "Propriété Intellectuelle"
+          ip: "Propriété Totale"
         },
         impact: {
-          projects: "Projets d'Entreprise",
-          delivery: "Livraison Plus Rapide",
-          uptime: "Disponibilité Système",
-          card_title: "Transformation Numérique Industrielle.",
-          card_desc: "De la startup locale à la multinationale, notre code propulse des opérations servant des millions d'utilisateurs. Nous visons performance et sécurité.",
+          projects: "Code Sur Mesure",
+          delivery: "Dette Technique",
+          uptime: "Support Dédié",
+          card_title: "Conçu pour le Web Moderne.",
+          card_desc: "Nous sommes une équipe dédiée d'ingénieurs axée sur la création d'infrastructures numériques performantes, sécurisées et évolutives. Nous apportons une architecture moderne aux entreprises visionnaires.",
           list: {
             arch: "Architecture Haute Performance",
             ai: "Flux de Travail Automatisés",
-            security: "Sécurité Bancaire"
+            security: "Sécurité de Grade"
           }
         },
         disciplines: {

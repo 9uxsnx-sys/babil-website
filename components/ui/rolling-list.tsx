@@ -28,7 +28,8 @@ const colorClassMap: Record<string, string> = {
 };
 
 const RollingTextItem: React.FC<RollingTextItemProps> = ({ item, onClick }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isFr = i18n.language.startsWith('fr');
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -58,7 +59,7 @@ const RollingTextItem: React.FC<RollingTextItemProps> = ({ item, onClick }) => {
         >
           {/* State 1: Normal */}
           <div className="h-10 sm:h-12 md:h-20 lg:h-24 flex items-center">
-            <h2 className="text-xl sm:text-3xl md:text-5xl lg:text-7xl font-black text-neutral-900 dark:text-white uppercase tracking-tighter whitespace-nowrap">
+            <h2 className="text-lg sm:text-2xl md:text-4xl lg:text-5xl font-black text-neutral-900 dark:text-white uppercase tracking-tighter whitespace-nowrap">
               {title}
             </h2>
           </div>
@@ -67,7 +68,7 @@ const RollingTextItem: React.FC<RollingTextItemProps> = ({ item, onClick }) => {
           <div className="h-10 sm:h-12 md:h-20 lg:h-24 flex items-center">
             <h2
               className={cn(
-                "text-xl sm:text-3xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter italic whitespace-nowrap",
+                "text-lg sm:text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter italic whitespace-nowrap",
                 colorClassMap[item.color]
               )}
             >

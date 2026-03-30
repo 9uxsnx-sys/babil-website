@@ -48,7 +48,7 @@ export default function TitleComponent({ onNavigate }: TitleComponentProps) {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="font-black uppercase tracking-tighter mb-8 text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95]"
+                            className="font-black uppercase tracking-tighter mb-8 leading-[0.95] text-4xl md:text-6xl lg:text-[4.5rem]"
                         >
                             {t('hero.title_line1')} <br />
                             {t('hero.title_line2')} <br />
@@ -108,7 +108,7 @@ export default function TitleComponent({ onNavigate }: TitleComponentProps) {
                         className="flex items-center gap-8 md:gap-16 pt-8 border-t border-neutral-200 dark:border-neutral-800"
                     >
                         <div>
-                            <h3 className="text-4xl md:text-5xl font-black tracking-tighter leading-none">50+</h3>
+                            <h3 className="text-4xl md:text-5xl font-black tracking-tighter leading-none">24/7</h3>
                             <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500 mt-2">{t('hero.stats.active_partners')}</p>
                         </div>
                         <div>
