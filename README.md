@@ -1,20 +1,91 @@
+# Babil Agency Website
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img src="public/logo.svg" alt="Babil Logo" width="200" />
 </div>
 
-# Run and deploy your AI Studio app
+## About Babil Agency
 
-This contains everything you need to run your app locally.
+Babil Agency is a modern digital solutions company specializing in:
 
-View your app in AI Studio: https://ai.studio/apps/3aadc86d-13b1-4243-8a58-cce050f4675f
+- **AI Services** - Custom AI solutions and automation
+- **Web Design & Development** - Modern, responsive websites
+- **Mobile Apps** - iOS and Android application development
+- **Business Systems** - Enterprise software and workflow automation
+- **Smart Security** - Security systems and surveillance solutions
+- **B2B Services** - Business-to-business technology solutions
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework:** React 18 + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Icons:** Lucide React
+- **Internationalization:** i18next + react-i18next
+- **UI Components:** Radix UI
 
+## Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- 🌐 Multi-language support (English/Arabic)
+- 🎨 Dark/Light mode support
+- ✨ Smooth animations and transitions
+- 📱 Fully responsive design
+- 🎯 Service pricing pages
+- 📬 Contact form integration
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/9uxsnx-sys/babil-website.git
+   cd babil-website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+babil-website/
+├── components/          # React components
+│   ├── ui/             # UI components (buttons, icons, etc.)
+│   └── *.tsx           # Page components
+├── public/             # Static assets
+│   ├── logo.svg        # Company logo
+│   └── favicon.png     # Browser icon
+├── App.tsx             # Main application
+├── index.html          # HTML entry point
+└── package.json        # Dependencies
+```
+
+## License
+
+© 2026 Babil Agency. All rights reserved.
+
+## Contact
+
+Visit our website: [https://babil.agency](https://babil.agency)
