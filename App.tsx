@@ -59,7 +59,7 @@ export default function App() {
             aria-label="Go to home"
           >
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="Babil Logo"
               className="h-12 md:h-14 w-auto object-contain"
             />
