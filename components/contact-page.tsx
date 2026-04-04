@@ -37,8 +37,8 @@ export default function ContactPage({ onBack }: { onBack: () => void }) {
                              <Mail className="size-5" />
                              <span className="text-xs font-bold uppercase tracking-widest">{t('contact.email')}</span>
                         </div>
-                        <a href="mailto:hello@bable.com" className="text-2xl md:text-3xl font-bold hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors underline decoration-neutral-200 dark:decoration-neutral-800 decoration-2 underline-offset-4">
-                            hello@bable.com
+                        <a href="mailto:babil.agency@gmail.com" className="text-2xl md:text-3xl font-bold hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors underline decoration-neutral-200 dark:decoration-neutral-800 decoration-2 underline-offset-4">
+                            babil.agency@gmail.com
                         </a>
                     </div>
 
@@ -47,8 +47,8 @@ export default function ContactPage({ onBack }: { onBack: () => void }) {
                              <Phone className="size-5" />
                              <span className="text-xs font-bold uppercase tracking-widest">{t('contact.call')}</span>
                         </div>
-                        <a href="tel:+213555123456" className="text-2xl md:text-3xl font-bold hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors">
-                            +213 555 123 456
+                        <a href="tel:0774276750" className="text-2xl md:text-3xl font-bold hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors">
+                            0774 27 67 50
                         </a>
                     </div>
 
@@ -57,10 +57,11 @@ export default function ContactPage({ onBack }: { onBack: () => void }) {
                              <MapPin className="size-5" />
                              <span className="text-xs font-bold uppercase tracking-widest">{t('contact.location')}</span>
                         </div>
-                        <p className="text-xl md:text-2xl font-bold text-neutral-800 dark:text-neutral-200 leading-tight">
-                            123 Innovation Blvd, <br/>
-                            Algiers, Algeria
-                        </p>
+                        <a href="https://maps.app.goo.gl/L1XWjkzWTyHfVM7V9" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-bold text-neutral-800 dark:text-neutral-200 leading-tight hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors underline decoration-neutral-200 dark:decoration-neutral-800 decoration-2 underline-offset-4">
+                            commercial center<br/>
+                            Mohammedia Mall<br/>
+                            floor 3
+                        </a>
                     </div>
                 </div>
 
@@ -68,9 +69,8 @@ export default function ContactPage({ onBack }: { onBack: () => void }) {
                 <div className="mt-8 lg:mt-auto">
                     <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">{t('contact.follow')}</p>
                     <div className="flex flex-col gap-4">
-                        <SocialLink href="#" label="Instagram" />
-                        <SocialLink href="#" label="LinkedIn" />
-                        <SocialLink href="#" label="Twitter / X" />
+                        <SocialLink href="https://www.instagram.com/babil__inc?igsh=bWQ3M3hkY2thbmph" label="Instagram" />
+                        <SocialLink href="https://wa.me/213774276750" label="WhatsApp" />
                     </div>
                 </div>
             </div>
