@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { cn } from "../../lib/utils";
-import { Sparkles, Layers, Smartphone, Blocks, MessageCircle, Fingerprint } from "lucide-react";
+import { Layers, Blocks, LayoutGrid } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 interface ListItem {
@@ -134,33 +134,15 @@ export function RollingTextList({ onItemClick }: { onItemClick?: (id: number) =>
   const items: ListItem[] = [
     {
       id: 1,
-      titleKey: "services_list.ai_services",
-      categoryKey: "services_list.categories.intelligence",
-      src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&auto=format&fit=crop&q=60",
-      alt: "Artificial Intelligence",
-      color: "blue",
-      Icon: Sparkles,
-    },
-    {
-      id: 2,
       titleKey: "services_list.web_design",
       categoryKey: "services_list.categories.digital",
       src: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=60",
-      alt: "Web Development",
+      alt: "Website Solutions",
       color: "blue",
       Icon: Layers,
     },
     {
-      id: 3,
-      titleKey: "services_list.mobile_apps",
-      categoryKey: "services_list.categories.mobile",
-      src: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=60",
-      alt: "Mobile Development",
-      color: "blue",
-      Icon: Smartphone,
-    },
-    {
-      id: 4,
+      id: 2,
       titleKey: "services_list.business_systems",
       categoryKey: "services_list.categories.solutions",
       src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60",
@@ -169,22 +151,13 @@ export function RollingTextList({ onItemClick }: { onItemClick?: (id: number) =>
       Icon: Blocks,
     },
     {
-      id: 5,
-      titleKey: "services_list.tech_support",
-      categoryKey: "services_list.categories.maintenance",
-      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&auto=format&fit=crop&q=60",
-      alt: "B2B",
+      id: 3,
+      titleKey: "services_list.platforms",
+      categoryKey: "services_list.categories.platforms",
+      src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&auto=format&fit=crop&q=60",
+      alt: "Complete Platforms",
       color: "blue",
-      Icon: MessageCircle,
-    },
-    {
-      id: 6,
-      titleKey: "services_list.smart_security",
-      categoryKey: "services_list.categories.security",
-      src: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&auto=format&fit=crop&q=60",
-      alt: "Smart Systems",
-      color: "blue",
-      Icon: Fingerprint,
+      Icon: LayoutGrid,
     },
   ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowLeft, Check, MoveRight } from "lucide-react";
 import { ServicePolicies } from "./service-policies";
+import CategoryFAQs from "./ui/category-faqs";
 import { useTranslation } from "react-i18next";
 
 interface PricingTier {
@@ -22,7 +23,7 @@ export default function BusinessSystemsPricing({ onBack, onBook }: { onBack: () 
       title: t('pricing_biz.t1.title'),
       category: t('pricing_biz.t1.cat'),
       price: t('common.custom_quote'),
-      delivery: "10-21 Days",
+      delivery: "4-6 Weeks",
       description: t('pricing_biz.t1.desc'),
       features: t('pricing_biz.t1.f', { returnObjects: true }) as string[]
     },
@@ -31,7 +32,7 @@ export default function BusinessSystemsPricing({ onBack, onBook }: { onBack: () 
       title: t('pricing_biz.t2.title'),
       category: t('pricing_biz.t2.cat'),
       price: t('common.custom_quote'),
-      delivery: "15-21 Days",
+      delivery: "6-10 Weeks",
       description: t('pricing_biz.t2.desc'),
       features: t('pricing_biz.t2.f', { returnObjects: true }) as string[]
     },
@@ -40,7 +41,7 @@ export default function BusinessSystemsPricing({ onBack, onBook }: { onBack: () 
       title: t('pricing_biz.t3.title'),
       category: t('pricing_biz.t3.cat'),
       price: t('common.custom_quote'),
-      delivery: "21-30 Days",
+      delivery: "10-16 Weeks",
       description: t('pricing_biz.t3.desc'),
       features: t('pricing_biz.t3.f', { returnObjects: true }) as string[]
     }
@@ -111,6 +112,17 @@ export default function BusinessSystemsPricing({ onBack, onBook }: { onBack: () 
         </div>
 
         <ServicePolicies />
+
+        <CategoryFAQs 
+          title="FAQ"
+          description={t('category_faqs.biz.desc')}
+          onContactClick={onBook}
+          faqItems={(t('category_faqs.biz.items', { returnObjects: true }) as Array<{q: string, a: string}>).map((item, index) => ({
+            id: `biz-${index + 1}`,
+            question: item.q,
+            answer: item.a
+          }))}
+        />
       </div>
     </div>
   );

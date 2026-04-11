@@ -8,7 +8,7 @@ import FAQs from './ui/faqs';
 import { useTranslation } from 'react-i18next';
 
 interface HomePageProps {
-  onNavigate: (page: 'home' | 'services' | 'contact' | 'web-design' | 'ai-services' | 'business-systems' | 'smart-security' | 'mobile-apps') => void;
+  onNavigate: (page: 'home' | 'services' | 'contact' | 'web-design' | 'business-systems' | 'platforms') => void;
 }
 
 export default function HomePage({ onNavigate }: HomePageProps) {
@@ -56,25 +56,25 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <ProjectCard 
-                    title={t('home.capabilities.cards.web.title')} 
-                    category={t('home.capabilities.cards.web.category')}
-                    price={t('home.capabilities.cards.web.tag')}
+                    title={t('services_list.web_design')} 
+                    category={t('services_list.categories.digital')}
+                    price="Website Solutions"
                     image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
                     onClick={() => onNavigate('web-design')}
                 />
                 <ProjectCard 
-                    title={t('home.capabilities.cards.ai.title')} 
-                    category={t('home.capabilities.cards.ai.category')}
-                    price={t('home.capabilities.cards.ai.tag')}
-                    image="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=60"
-                    onClick={() => onNavigate('ai-services')}
+                    title={t('services_list.business_systems')} 
+                    category={t('services_list.categories.solutions')}
+                    price="Business Systems"
+                    image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+                    onClick={() => onNavigate('business-systems')}
                 />
                 <ProjectCard 
-                    title={t('home.capabilities.cards.mobile.title')} 
-                    category={t('home.capabilities.cards.mobile.category')}
-                    price={t('home.capabilities.cards.mobile.tag')}
-                    image="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800&auto=format&fit=crop&q=60"
-                    onClick={() => onNavigate('mobile-apps')}
+                    title={t('services_list.platforms')} 
+                    category={t('services_list.categories.platforms')}
+                    price="Complete Platforms"
+                    image="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&auto=format&fit=crop&q=60"
+                    onClick={() => onNavigate('platforms')}
                 />
             </div>
         </div>

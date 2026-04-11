@@ -32,19 +32,13 @@ export const resources = {
         }
       },
       services_list: {
-        ai_services: "Custom Automation",
-        web_design: "Web Design & Dev",
-        mobile_apps: "Mobile Apps",
+        web_design: "Website Solutions",
         business_systems: "Business Systems",
-        tech_support: "B2B",
-        smart_security: "Smart Security",
+        platforms: "Complete Platforms",
         categories: {
-          intelligence: "Systems",
           digital: "Digital",
-          mobile: "Mobile",
           solutions: "Solutions",
-          maintenance: "Maintenance",
-          security: "Security"
+          platforms: "Platforms"
         }
       },
       home: {
@@ -110,11 +104,55 @@ export const resources = {
         desc: "Everything you need to know about our engineering protocols, billing structure, and deliverables.",
         support: "Contact Support",
         still_questions: "Still have questions?",
+        contact_us: "Contact Us",
         q1: { q: "How does your subscription model work?", a: "We offer flexible project-based pricing and retainer models. For continuous support and development, our retainer packages provide a set number of hours per month at a discounted rate." },
         q2: { q: "Do you offer post-launch support?", a: "Yes, every project comes with a comprehensive warranty period. We also offer dedicated maintenance packages to ensure your systems remain secure and up-to-date." },
         q3: { q: "How long does a typical project take?", a: "Timelines vary by complexity. A simple web platform might take 2-4 weeks, while a complex system integration or enterprise platform could take 8-12 weeks. We provide detailed roadmaps before starting." },
         q4: { q: "Can you integrate with our existing systems?", a: "Absolutely. Our engineering team specializes in API integrations and legacy system modernization. We can connect with your CRM, ERP, or any other third-party tools." },
         q5: { q: "What is your refund policy?", a: "We work with a milestone-based payment structure. If you are not satisfied with a milestone delivery, we will revise it until it meets your requirements as per our contract terms." }
+      },
+      category_faqs: {
+        web: {
+          desc: "Everything you need to know about our website solutions, from static sites to complete e-commerce platforms.",
+          items: [
+            { q: "Why should I choose a dynamic website over a static one?", a: "If you plan to update content regularly - blog posts, news, products, or pages - a dynamic website saves you money long-term. No need to hire a developer for every small change. You get a custom admin dashboard to manage everything yourself." },
+            { q: "What is the difference between browser access and mobile/desktop apps?", a: "Browser access works from any device with internet. Mobile apps are installed on your phone (iOS/Android) with push notifications. Desktop apps are installed software on your Mac/Windows computer with shortcuts. All connect to the same backend - choose what fits your workflow." },
+            { q: "Can I start with a static website and upgrade later?", a: "Absolutely. Many clients start simple and add features as they grow. We can migrate your content and upgrade to dynamic, add mobile apps, or expand to full e-commerce. Your investment is protected." },
+            { q: "Do I own my website and data?", a: "Yes, 100%. You own all code, designs, content, and data. We provide full source code and database exports. No platform lock-in, no vendor dependency. You are free to move or modify anything anytime." },
+            { q: "What happens after the website launches?", a: "We offer ongoing maintenance packages including hosting, security updates, backups, and technical support. Or you can self-host if you have technical resources. We will train your team and provide documentation." },
+            { q: "How long does it take to build a website?", a: "Timeline depends on complexity: Static sites typically 2-3 weeks, dynamic sites 4-6 weeks, and full ecosystems with mobile/desktop apps 8-12 weeks. We will provide a specific timeline during consultation based on your exact requirements." },
+            { q: "What makes you different from Wix, Squarespace, or WordPress?", a: "Three key differences: (1) True customization - we build exactly what you need, not template limitations; (2) Scalability - your website can grow into a full business system without rebuilding; (3) Ecosystem capability - we can add mobile and desktop apps connected to your website backend. Plus, you own everything outright." },
+            { q: "Can you integrate with our existing tools?", a: "Yes, we can integrate with most popular tools - Mailchimp, HubSpot, Salesforce, Slack, Google Workspace, and many others. During consultation, we will discuss your specific integration needs." }
+          ]
+        },
+        biz: {
+          desc: "Everything you need to know about our business management systems and ERP solutions.",
+          items: [
+            { q: "What is the difference between a Business System and ERP?", a: '"Business System" is modern terminology for software that helps run your business. "ERP" (Enterprise Resource Planning) traditionally refers to massive, expensive software for large corporations. We use "Business System" for small-to-mid solutions and reserve "ERP" only for our comprehensive enterprise tier.' },
+            { q: "Can you migrate our data from Excel/spreadsheets/current software?", a: "Yes, data migration is included in our implementation process. We will import your customers, products, inventory, and historical data. We handle the technical work - you just provide the files or access." },
+            { q: "How does this compare to off-the-shelf software like QuickBooks, Salesforce, or Zoho?", a: "Off-the-shelf software forces you into their predefined workflows. Our systems are custom-built around how YOU work. We combine the features you need (CRM + inventory + invoicing) in one unified system without paying for separate subscriptions. Plus, no per-user fees - unlimited team members." },
+            { q: "Can we access the system from outside the office?", a: "Yes, absolutely. The system is web-based and works from anywhere with internet. For even better mobile experience, we can add iOS/Android apps so your team can manage the business from their phones." },
+            { q: "How secure is our business data?", a: "Enterprise-grade security: encrypted data transmission (SSL/TLS), encrypted database storage, role-based access controls, audit logs of all activities, automated backups, and optional two-factor authentication. We can also deploy on-premise if you prefer data to stay in-house." },
+            { q: "What if we need new features later?", a: "Our systems are built to grow. We can add modules, new features, integrations, or workflows anytime. You are not locked into today's requirements - the system evolves with your business." },
+            { q: "What kind of support do you provide after launch?", a: "We offer tiered support packages: Standard (business hours email support), Professional (priority support + phone), and Enterprise (24/7 support with SLA). All include regular updates, security patches, and system maintenance." },
+            { q: "How long does implementation take?", a: "Essential systems typically 4-6 weeks, Advanced 6-10 weeks, Enterprise 10-16 weeks. This includes discovery, building, data migration, testing, and training. We'll give you a specific timeline after understanding your requirements." },
+            { q: "What happens if we outgrow the system?", a: "You won't need to rebuild. Our architecture scales from small business to enterprise. When you need more, we add modules and capabilities to your existing system. Your data and workflows remain intact - we just expand the functionality." },
+            { q: "Can the system integrate with our website or other tools?", a: "Yes, we build APIs into every system. Your website can connect to pull product data, accept orders, or check inventory. We can integrate with accounting software, email marketing, payment gateways, shipping providers, and most modern business tools." }
+          ]
+        },
+        platforms: {
+          desc: "Everything you need to know about our complete business platforms - unified ecosystems with websites, systems, and apps.",
+          items: [
+            { q: "What exactly is a Business Platform?", a: "It is the combination of everything your business needs digitally: your public website, your internal management system, and apps for your team - all connected to one shared backend. When you update a product price in your system, it instantly appears on your website. When a customer orders on your website, it appears in your system immediately. Everything connected." },
+            { q: "Why get mobile and desktop apps instead of just using the browser?", a: "Three reasons: (1) Speed - apps are faster than websites; (2) Professional experience - your team gets app-quality software with notifications and shortcuts; (3) Presence - having your business app on their phone/desktop keeps you top-of-mind." },
+            { q: "Do my customers download these apps too?", a: "Typically no - your customers interact with your website. The mobile and desktop apps are for YOUR team to manage the business. However, we CAN build customer-facing apps too if you want (like a client portal app or customer ordering app) - that is an add-on we can discuss." },
+            { q: "Can we add apps later if we start with just the website + system?", a: "Absolutely. Many clients start with web-only and add mobile or desktop apps 6-12 months later when their team grows. The backend is ready - we just build the apps and connect them. Your investment is future-proofed." },
+            { q: "Will all our data sync across devices instantly?", a: "Yes, in real-time. When your team makes changes on any device (web, mobile, or desktop), it appears on all other devices within seconds. Everyone sees the same current information - no version conflicts, no confusion about who has the latest file." },
+            { q: "What if someone does not have internet access?", a: "Desktop apps have full offline capability - work without internet and sync when reconnected. Mobile apps cache recent data for offline viewing. Web access requires internet. Your team chooses the right tool for their situation." },
+            { q: "Can different team members have different access levels?", a: "Yes, granular permissions. The sales team sees customers and orders but not financial reports. Managers see their department data. Admins see everything. You control who can view, edit, or delete what - down to individual fields." },
+            { q: "Is this overkill for a small business?", a: "Not necessarily. Small businesses often benefit most from platforms because you are getting enterprise-grade coordination without enterprise complexity or cost. If you are planning to grow, starting with the right foundation saves rebuilding later. During consultation, we will honestly tell you if a simpler solution makes more sense for your current stage." }
+          ]
+        }
       },
       footer: {
         ready: "Ready to",
@@ -156,14 +194,15 @@ export const resources = {
         }
       },
       pricing_web: {
-        title: "Web Design & Development",
-        desc: "We build responsive, high-performance websites tailored to your brand's specific needs.",
-        t1: { title: "One Page", cat: "Starter", desc: "High-impact single page presence. Ideal for personal portfolios and resumes.", f: ["Responsive Layout", "Contact Form", "Social Linkage"] },
-        t2: { title: "Landing Page", cat: "Marketing", desc: "Conversion-focused architecture designed specifically for marketing campaigns.", f: ["High Conversion UX", "Speed Optimized", "Analytics Core"] },
-        t3: { title: "E-commerce Lite", cat: "Business", desc: "Essential online store infrastructure. Rapid deployment for small inventories.", f: ["Product Catalog", "Cart System", "Admin Panel"] },
-        t4: { title: "Pro Commerce", cat: "Enterprise", desc: "Full-scale retail ecosystem with inventory management and customer accounts.", f: ["Inventory Sync", "User Accounts", "Adv. Payments"] },
-        t5: { title: "Static Site", cat: "Standard", desc: "Multi-page informational architecture. Stable, secure, and SEO-ready.", f: ["5-10 Pages", "SEO Structure", "CDN Hosted"] },
-        t6: { title: "Dynamic Core", cat: "Premium", desc: "Complex functionality with CMS integration and custom user interactions.", f: ["CMS Integration", "Auth System", "Custom Logic"] }
+        title: "Website Solutions",
+        desc: "Professional websites from simple static pages to complete e-commerce platforms with connected business systems.",
+        t1: { title: "Static Website", cat: "Starter", desc: "Professional multi-page websites with clean design and fast performance. Perfect for establishing your online presence.", f: ["5-10 custom pages", "Mobile-responsive design", "SEO-optimized structure", "Contact forms & integrations", "CDN hosting setup"] },
+        t2: { title: "Dynamic Website", cat: "Growth", desc: "CMS-powered websites you manage yourself. Update content, add pages, publish blog posts from your browser dashboard.", f: ["Everything in Static", "Custom admin dashboard", "Content Management System", "Blog/News publishing", "User registration system", "Training session included"] },
+        t3: { title: "Dynamic + Mobile App", cat: "Pro", desc: "Manage your website from anywhere with iOS and Android apps. Your team gets instant mobile access.", f: ["Everything in Dynamic", "iOS admin app", "Android admin app", "Push notifications", "Mobile-optimized workflows"] },
+        t4: { title: "Dynamic + Desktop App", cat: "Pro", desc: "Professional desktop software for your team. Mac and Windows applications with keyboard shortcuts and notifications.", f: ["Everything in Dynamic", "Mac application", "Windows application", "Keyboard shortcuts", "Desktop notifications"] },
+        t5: { title: "Full Stack Website", cat: "Elite", desc: "Complete ecosystem - web dashboard, mobile apps, and desktop apps all connected to one powerful backend.", f: ["Everything in Dynamic", "iOS + Android apps", "Mac + Windows apps", "Real-time sync across devices", "Role-based access"] },
+        t6: { title: "E-Commerce Website", cat: "Commerce", desc: "Full-featured online stores with product catalogs, shopping carts, secure payments, and order management.", f: ["Custom store design", "Product catalog", "Secure checkout", "Multiple payment gateways", "Customer accounts", "Inventory management"] },
+        t7: { title: "E-Commerce + System", cat: "Commerce Pro", desc: "Ultimate retail platform - your store connected to CRM, inventory, purchasing, and business intelligence.", f: ["Everything in E-Commerce", "Advanced inventory", "CRM integration", "Purchasing management", "Analytics dashboard"] }
       },
       pricing_ai: {
         title: "Custom Automation",
@@ -175,11 +214,19 @@ export const resources = {
         t5: { title: "Data Vision", cat: "Analytics", desc: "Real-time performance dashboards. Transforms raw data into actionable intelligence.", f: ["Live Dashboards", "Trend Analysis", "Reports"] }
       },
       pricing_biz: {
-        title: "Business Systems",
-        desc: "Streamline your operations with custom software solutions designed for efficiency.",
-        t1: { title: "Auto-Book", cat: "Scheduling", desc: "Automated reservation core with WhatsApp/Email notification relays. Zero conflict scheduling.", f: ["Auto-Schedule", "Notification Relay", "Calendar Sync"] },
-        t2: { title: "CRM Core", cat: "Operations", desc: "Centralized operational hub. Track client vectors, sales pipelines, and deal status in real-time.", f: ["Client Tracking", "Pipeline Logic", "Ops Analytics"] },
-        t3: { title: "API Forge", cat: "Integration", desc: "Custom connectivity architecture. Linking disparate platforms via robust, secure API endpoints.", f: ["Secure Transfer", "Cross-Platform", "Scalable Arch"] }
+        title: "Business Management Systems",
+        desc: "Custom software to run your business operations - from CRM and inventory to complete ERP solutions.",
+        t1: { title: "Essential System", cat: "Core", desc: "Replace spreadsheets with a unified system. Customer management, inventory tracking, and invoicing - all connected.", f: ["Customer Relationship Management (CRM)", "Inventory/stock management", "Invoicing & quotes", "Basic reporting & dashboards", "User management & permissions", "Web-based access"] },
+        t2: { title: "Advanced System", cat: "Operations", desc: "Take control of your operations. Multi-location inventory, purchasing workflows, and advanced analytics.", f: ["Everything in Essential", "Multi-location inventory", "Supplier & purchase orders", "Advanced analytics & BI", "Workflow automation", "API access for integrations"] },
+        t3: { title: "Enterprise System", cat: "ERP", desc: "Comprehensive business management. HR, advanced accounting, multi-company support, and complex workflows.", f: ["Everything in Advanced", "Human Resources management", "Advanced accounting", "Multi-company support", "Complex approval workflows", "Dedicated account manager"] }
+      },
+      pricing_platforms: {
+        title: "Complete Business Platforms",
+        desc: "Everything connected - your public website, business system, and team apps working as one unified platform.",
+        t1: { title: "Platform Starter", cat: "Unified", desc: "Your customers see a beautiful website. You manage everything from one powerful backend. The foundation of a connected business.", f: ["Public-facing website", "Business management system", "Web-based admin dashboard", "Customer portal", "Unified database", "Single sign-on", "Training & documentation"] },
+        t2: { title: "Platform Growth", cat: "Mobile", desc: "Manage your entire business from your pocket. iOS and Android apps give your team ultimate flexibility.", f: ["Everything in Starter", "iOS business app", "Android business app", "Push notifications", "Mobile-optimized workflows", "Real-time sync across devices"] },
+        t3: { title: "Platform Pro", cat: "Desktop", desc: "Professional desktop software experience for your headquarters. Full-featured Mac and Windows applications.", f: ["Everything in Starter", "Mac business application", "Windows business application", "Keyboard shortcuts", "Desktop notifications", "Multi-window workspace"] },
+        t4: { title: "Platform Ultimate", cat: "Complete", desc: "Everything, everywhere. Website, business system, mobile apps, desktop apps, and custom integrations.", f: ["Everything combined", "iOS + Android apps", "Mac + Windows apps", "Custom third-party integrations", "Advanced security features", "Priority support with SLA"] }
       },
       pricing_sec: {
         title: "Smart Security",
@@ -239,19 +286,13 @@ export const resources = {
         }
       },
       services_list: {
-        ai_services: "Automatisation Sur Mesure",
-        web_design: "Web Design & Dev",
-        mobile_apps: "Applications Mobiles",
+        web_design: "Solutions Web",
         business_systems: "Systèmes Business",
-        tech_support: "B2B",
-        smart_security: "Sécurité Intelligente",
+        platforms: "Plateformes Complètes",
         categories: {
-          intelligence: "Systèmes",
           digital: "Numérique",
-          mobile: "Mobile",
           solutions: "Solutions",
-          maintenance: "Maintenance",
-          security: "Sécurité"
+          platforms: "Plateformes"
         }
       },
       home: {
@@ -317,11 +358,55 @@ export const resources = {
         desc: "Tout ce que vous devez savoir sur nos protocoles d'ingénierie, notre facturation et nos livrables.",
         support: "Contacter le Support",
         still_questions: "Encore des questions ?",
+        contact_us: "Nous Contacter",
         q1: { q: "Comment fonctionne votre modèle d'abonnement ?", a: "Nous proposons une tarification par projet ou des modèles de rétention. Pour un support continu, nos forfaits offrent un nombre d'heures mensuelles à tarif réduit." },
         q2: { q: "Offrez-vous un support après lancement ?", a: "Oui, chaque projet inclut une période de garantie complète. Nous proposons aussi des forfaits de maintenance pour garder vos systèmes sécurisés." },
         q3: { q: "Combien de temps dure un projet typique ?", a: "Les délais varient. Une plateforme web simple peut prendre 2-4 semaines, tandis qu'une intégration système complexe peut prendre 8-12 semaines." },
         q4: { q: "Pouvez-vous intégrer nos systèmes existants ?", a: "Absolument. Notre équipe est spécialisée dans les API et la modernisation de systèmes existants (CRM, ERP, etc.)." },
         q5: { q: "Quelle est votre politique de remboursement ?", a: "Nous fonctionnons par étapes. Si une étape ne vous satisfait pas, nous la révisons jusqu'à ce qu'elle réponde aux exigences du contrat." }
+      },
+      category_faqs: {
+        web: {
+          desc: "Tout ce que vous devez savoir sur nos solutions web, des sites statiques aux plateformes e-commerce complètes.",
+          items: [
+            { q: "Pourquoi choisir un site dynamique plutôt qu'un site statique ?", a: "Si vous prévoyez de mettre à jour le contenu régulièrement - articles de blog, actualités, produits ou pages - un site dynamique vous fait économiser de l'argent à long terme. Pas besoin d'embaucher un développeur pour chaque petite modification. Vous obtenez un tableau de bord admin personnalisé pour tout gérer vous-même." },
+            { q: "Quelle est la différence entre l'accès navigateur et les apps mobile/desktop ?", a: "L'accès navigateur fonctionne depuis n'importe quel appareil avec internet. Les apps mobiles s'installent sur votre téléphone (iOS/Android) avec notifications push. Les apps desktop sont des logiciels installés sur votre Mac/Windows avec raccourcis. Tous se connectent au même backend - choisissez ce qui convient à votre workflow." },
+            { q: "Puis-je commencer avec un site statique et upgrader plus tard ?", a: "Absolument. De nombreux clients commencent simples et ajoutent des fonctionnalités au fur et à mesure. Nous pouvons migrer votre contenu et upgrader vers du dynamique, ajouter des apps mobiles, ou passer à du e-commerce complet. Votre investissement est protégé." },
+            { q: "Est-ce que je possède mon site web et mes données ?", a: "Oui, 100%. Vous possédez tout le code, designs, contenu et données. Nous fournissons le code source complet et les exports de base de données. Pas de verrouillage plateforme, pas de dépendance vendeur. Vous êtes libre de déplacer ou modifier tout ce que vous voulez." },
+            { q: "Que se passe-t-il après le lancement du site ?", a: "Nous proposons des forfaits de maintenance incluant hébergement, mises à jour de sécurité, sauvegardes et support technique. Ou vous pouvez auto-héberger si vous avez des ressources techniques. Nous formons votre équipe et fournissons de la documentation." },
+            { q: "Combien de temps faut-il pour construire un site web ?", a: "Le délai dépend de la complexité : sites statiques typiquement 2-3 semaines, sites dynamiques 4-6 semaines, et écosystèmes complets avec apps mobile/desktop 8-12 semaines. Nous fournissons un délai spécifique lors de la consultation selon vos besoins exacts." },
+            { q: "Qu'est-ce qui vous différencie de Wix, Squarespace ou WordPress ?", a: "Trois différences clés : (1) Vraie personnalisation - nous construisons exactement ce dont vous avez besoin, pas les limitations de templates ; (2) Évolutivité - votre site peut devenir un système business complet sans reconstruction ; (3) Capacité écosystème - nous pouvons ajouter des apps mobile et desktop connectées à votre backend. De plus, vous possédez tout." },
+            { q: "Pouvez-vous intégrer avec nos outils existants ?", a: "Oui, nous pouvons intégrer avec la plupart des outils populaires - Mailchimp, HubSpot, Salesforce, Slack, Google Workspace, et bien d'autres. Lors de la consultation, nous discutons de vos besoins d'intégration spécifiques." }
+          ]
+        },
+        biz: {
+          desc: "Tout ce que vous devez savoir sur nos systèmes de gestion business et solutions ERP.",
+          items: [
+            { q: "Quelle est la différence entre un Système Business et un ERP ?", a: '"Système Business" est la terminologie moderne pour les logiciels qui aident à gérer votre business. "ERP" (Enterprise Resource Planning) fait traditionnellement référence à des logiciels massifs et coûteux pour grandes entreprises. Nous utilisons "Système Business" pour les solutions petites à moyennes et réservons "ERP" uniquement pour notre niveau entreprise complet.' },
+            { q: "Pouvez-vous migrer nos données depuis Excel/tableurs/logiciel actuel ?", a: "Oui, la migration de données est incluse dans notre processus d'implémentation. Nous importerons vos clients, produits, stocks et données historiques. Nous gérons le travail technique - vous fournissez juste les fichiers ou l'accès." },
+            { q: "Comment cela se compare-t-il aux logiciels prêts-à-l'emploi comme QuickBooks, Salesforce ou Zoho ?", a: "Les logiciels prêts-à-l'emploi vous forcent dans leurs workflows prédéfinis. Nos systèmes sont construits sur mesure autour de VOTRE façon de travailler. Nous combinons les fonctionnalités dont vous avez besoin (CRM + stocks + facturation) dans un système unifié sans payer pour des abonnements séparés. De plus, pas de frais par utilisateur - membres d'équipe illimités." },
+            { q: "Peut-on accéder au système depuis l'extérieur du bureau ?", a: "Oui, absolument. Le système est web-based et fonctionne de n'importe où avec internet. Pour une meilleure expérience mobile, nous pouvons ajouter des apps iOS/Android pour que votre équipe gère le business depuis leurs téléphones." },
+            { q: "Quelle est la sécurité de nos données business ?", a: "Sécurité niveau entreprise : transmission de données chiffrée (SSL/TLS), stockage base de données chiffré, contrôles d'accès basés sur les rôles, logs d'audit de toutes les activités, sauvegardes automatisées, et authentification deux facteurs optionnelle. Nous pouvons aussi déployer sur site si vous préférez que les données restent en interne." },
+            { q: "Que se passe-t-il si nous avons besoin de nouvelles fonctionnalités plus tard ?", a: "Nos systèmes sont construits pour évoluer. Nous pouvons ajouter des modules, nouvelles fonctionnalités, intégrations ou workflows à tout moment. Vous n'êtes pas verrouillé dans les besoins d'aujourd'hui - le système évolue avec votre business." },
+            { q: "Quel type de support fournissez-vous après le lancement ?", a: "Nous proposons des forfaits support échelonnés : Standard (support email heures ouvrables), Professionnel (support prioritaire + téléphone), et Entreprise (support 24/7 avec SLA). Tous incluent mises à jour régulières, patches de sécurité et maintenance système." },
+            { q: "Combien de temps prend l'implémentation ?", a: "Les systèmes Essentiels prennent typiquement 4-6 semaines, Avancés 6-10 semaines, Entreprise 10-16 semaines. Cela inclut découverte, construction, migration données, tests et formation. Nous vous donnerons un délai spécifique après avoir compris vos besoins." },
+            { q: "Que se passe-t-il si nous dépassons le système ?", a: "Vous n'aurez pas besoin de reconstruire. Notre architecture évolue du small business à l'entreprise. Quand vous avez besoin de plus, nous ajoutons modules et capacités à votre système existant. Vos données et workflows restent intacts - nous étendons juste les fonctionnalités." },
+            { q: "Le système peut-il s'intégrer avec notre site web ou autres outils ?", a: "Oui, nous construisons des APIs dans chaque système. Votre site web peut se connecter pour récupérer les données produits, accepter commandes, ou vérifier stocks. Nous pouvons intégrer avec logiciels comptables, email marketing, passerelles paiement, fournisseurs expédition, et la plupart des outils business modernes." }
+          ]
+        },
+        platforms: {
+          desc: "Tout ce que vous devez savoir sur nos plateformes business complètes - écosystèmes unifiés avec sites web, systèmes et apps.",
+          items: [
+            { q: "Qu'est-ce qu'une Plateforme Business exactement ?", a: "C'est la combinaison de tout ce dont votre business a besoin numériquement : votre site web public, votre système de gestion interne, et les apps pour votre équipe - tous connectés à un backend partagé. Quand vous mettez à jour un prix produit dans votre système, il apparaît instantanément sur votre site web. Quand un client commande sur votre site, cela apparaît dans votre système immédiatement. Tout est connecté." },
+            { q: "Pourquoi prendre des apps mobile et desktop au lieu du navigateur seul ?", a: "Trois raisons : (1) Vitesse - les apps sont plus rapides que les sites web ; (2) Expérience professionnelle - votre équipe a des logiciels de qualité app avec notifications et raccourcis ; (3) Présence - avoir votre app business sur leur téléphone/desktop vous garde au premier plan." },
+            { q: "Est-ce que mes clients téléchargent aussi ces apps ?", a: "Typiquement non - vos clients interagissent avec votre site web. Les apps mobile et desktop sont pour VOTRE équipe pour gérer le business. Cependant, nous POUVONS construire des apps pour clients si vous voulez (comme un portail client ou app commandes) - c'est un module additionnel que nous pouvons discuter." },
+            { q: "Pouvons-nous ajouter des apps plus tard si on commence avec juste le site web + système ?", a: "Absolument. De nombreux clients commencent web-only et ajoutent des apps mobile ou desktop 6-12 mois plus tard quand leur équipe grandit. Le backend est prêt - nous construisons juste les apps et les connectons. Votre investissement est à l'épreuve du futur." },
+            { q: "Toutes nos données se synchronisent-elles instantanément entre appareils ?", a: "Oui, en temps réel. Quand votre équipe fait des changements sur n'importe quel appareil (web, mobile, ou desktop), cela apparaît sur tous les autres appareils en quelques secondes. Tout le monde voit les mêmes informations actuelles - pas de conflits de versions, pas de confusion sur qui a le dernier fichier." },
+            { q: "Que se passe-t-il si quelqu'un n'a pas accès internet ?", a: "Les apps desktop ont une capacité hors ligne complète - travaillez sans internet et synchronisez quand reconnecté. Les apps mobiles mettent en cache les données récentes pour visualisation hors ligne. L'accès web nécessite internet. Votre équipe choisit le bon outil pour sa situation." },
+            { q: "Les membres de l'équipe peuvent-ils avoir différents niveaux d'accès ?", a: "Oui, permissions granulaires. L'équipe vente voit les clients et commandes mais pas les rapports financiers. Les managers voient les données de leur département. Les admins voient tout. Vous contrôlez qui peut voir, éditer ou supprimer quoi - jusqu'aux champs individuels." },
+            { q: "Est-ce trop pour une petite entreprise ?", a: "Pas nécessairement. Les petites entreprises bénéficient souvent le plus des plateformes car vous obtenez une coordination niveau entreprise sans complexité ou coût entreprise. Si vous prévoyez de croître, partir avec les bonnes fondations évite de reconstruire plus tard. Lors de la consultation, nous vous dirons honnêtement si une solution plus simple a plus de sens pour votre stade actuel." }
+          ]
+        }
       },
       footer: {
         ready: "Prêt à",
@@ -363,14 +448,15 @@ export const resources = {
         }
       },
       pricing_web: {
-        title: "Web Design & Dév",
-        desc: "Nous créons des sites web réactifs et performants, adaptés aux besoins spécifiques de votre marque.",
-        t1: { title: "Site Une Page", cat: "Starter", desc: "Présence monopage à fort impact. Idéal pour portfolios personnels et CVs.", f: ["Mise en Page Réactive", "Formulaire Contact", "Liens Sociaux"] },
-        t2: { title: "Page de Vente", cat: "Marketing", desc: "Architecture axée sur la conversion, conçue spécifiquement pour les campagnes marketing.", f: ["UX Haute Conversion", "Optimisé Vitesse", "Cœur Analytique"] },
-        t3: { title: "E-commerce Lite", cat: "Business", desc: "Infrastructure e-commerce essentielle. Déploiement rapide pour petits stocks.", f: ["Catalogue Produits", "Système Panier", "Panneau Admin"] },
-        t4: { title: "Commerce Pro", cat: "Enterprise", desc: "Écosystème de vente complet avec gestion des stocks et comptes clients.", f: ["Synchro Stocks", "Comptes Utilisateurs", "Paiements Avancés"] },
-        t5: { title: "Site Vitrine", cat: "Standard", desc: "Architecture informative multipage. Stable, sécurisée et prête pour le SEO.", f: ["5-10 Pages", "Structure SEO", "Hébergé CDN"] },
-        t6: { title: "Cœur Dynamique", cat: "Premium", desc: "Fonctionnalités complexes avec intégration CMS et interactions utilisateur personnalisées.", f: ["Intégration CMS", "Système Auth", "Logique Custom"] }
+        title: "Solutions Web",
+        desc: "Des sites web professionnels allant des pages statiques simples aux plateformes e-commerce complètes avec systèmes business connectés.",
+        t1: { title: "Site Statique", cat: "Starter", desc: "Sites web multi-pages professionnels avec un design épuré et des performances rapides. Parfait pour établir votre présence en ligne.", f: ["5-10 pages personnalisées", "Design adaptatif mobile", "Structure optimisée SEO", "Formulaires de contact", "Hébergement CDN"] },
+        t2: { title: "Site Dynamique", cat: "Growth", desc: "Sites web avec CMS que vous gérez vous-même. Mettez à jour le contenu, ajoutez des pages, publiez des articles depuis votre tableau de bord.", f: ["Tout du Site Statique", "Tableau de bord admin", "Système de Gestion de Contenu", "Publication Blog/News", "Système d'inscription", "Session de formation"] },
+        t3: { title: "Dynamique + App Mobile", cat: "Pro", desc: "Gérez votre site web de n'importe où avec des apps iOS et Android. Votre équipe a un accès mobile instantané.", f: ["Tout du Site Dynamique", "App admin iOS", "App admin Android", "Notifications push", "Workflows optimisés mobile"] },
+        t4: { title: "Dynamique + App Desktop", cat: "Pro", desc: "Logiciel desktop professionnel pour votre équipe. Applications Mac et Windows avec raccourcis clavier et notifications.", f: ["Tout du Site Dynamique", "Application Mac", "Application Windows", "Raccourcis clavier", "Notifications desktop"] },
+        t5: { title: "Site Full Stack", cat: "Elite", desc: "Écosystème complet - tableau de bord web, apps mobiles et desktop, tous connectés à un backend puissant.", f: ["Tout du Site Dynamique", "Apps iOS + Android", "Apps Mac + Windows", "Synchronisation temps réel", "Accès basé sur les rôles"] },
+        t6: { title: "Site E-Commerce", cat: "Commerce", desc: "Boutiques en ligne complètes avec catalogues produits, paniers d'achat, paiements sécurisés et gestion des commandes.", f: ["Design boutique personnalisé", "Catalogue produits", "Paiement sécurisé", "Passerelles de paiement", "Comptes clients", "Gestion des stocks"] },
+        t7: { title: "E-Commerce + Système", cat: "Commerce Pro", desc: "Plateforme retail ultime - votre boutique connectée à CRM, stocks, achats et intelligence business.", f: ["Tout du E-Commerce", "Stocks avancés", "Intégration CRM", "Gestion des achats", "Tableaux de bord analytiques"] }
       },
       pricing_ai: {
         title: "Automatisation Sur Mesure",
@@ -382,11 +468,19 @@ export const resources = {
         t5: { title: "Vision Data", cat: "Analytique", desc: "Tableaux de bord de performance en temps réel. Transforme les données brutes en intelligence exploitable.", f: ["Tableaux Bord Live", "Analyse Tendances", "Rapports"] }
       },
       pricing_biz: {
-        title: "Systèmes Business",
-        desc: "Rationalisez vos opérations avec des solutions logicielles personnalisées conçues pour l'efficacité.",
-        t1: { title: "Réservation Auto", cat: "Planification", desc: "Noyau de réservation automatisé avec relais de notification WhatsApp/Email. Planification sans conflit.", f: ["Auto-Planification", "Relais Notification", "Synchro Calendrier"] },
-        t2: { title: "CRM Central", cat: "Opérations", desc: "Hub opérationnel centralisé. Suivez vecteurs clients, pipelines de vente et statuts en temps réel.", f: ["Suivi Clients", "Logique Pipeline", "Analytique Ops"] },
-        t3: { title: "Forge API", cat: "Intégration", desc: "Architecture de connectivité sur mesure. Reliant plateformes disparates via endpoints API robustes et sécurisés.", f: ["Transfert Sécurisé", "Multi-Plateforme", "Arch Scalable"] }
+        title: "Systèmes de Gestion Business",
+        desc: "Des logiciels personnalisés pour gérer vos opérations - de la gestion de la relation client aux solutions ERP complètes.",
+        t1: { title: "Système Essentiel", cat: "Core", desc: "Remplacez les feuilles de calcul par un système unifié. Gestion des clients, stocks et facturation - tous connectés.", f: ["Gestion Relation Client (CRM)", "Gestion des stocks", "Facturation & devis", "Tableaux de bord basiques", "Gestion des utilisateurs", "Accès web"] },
+        t2: { title: "Système Avancé", cat: "Opérations", desc: "Prenez le contrôle de vos opérations. Stocks multi-sites, workflows d'achats et analytiques avancées.", f: ["Tout du Système Essentiel", "Stocks multi-sites", "Commandes fournisseurs", "Analytiques & BI avancés", "Automatisation workflows", "Accès API"] },
+        t3: { title: "Système Entreprise", cat: "ERP", desc: "Gestion business complète. RH, comptabilité avancée, multi-entreprise et workflows complexes.", f: ["Tout du Système Avancé", "Gestion des Ressources Humaines", "Comptabilité avancée", "Multi-entreprise", "Workflows approbation complexes", "Manager dédié"] }
+      },
+      pricing_platforms: {
+        title: "Plateformes Business Complètes",
+        desc: "Tout connecté - votre site web public, système business et apps équipe travaillant comme une plateforme unifiée.",
+        t1: { title: "Plateforme Starter", cat: "Unifié", desc: "Vos clients voient un beau site web. Vous gérez tout depuis un backend puissant. La fondation d'une entreprise connectée.", f: ["Site web public", "Système de gestion business", "Tableau de bord web", "Portail client", "Base de données unifiée", "Connexion unique", "Formation & documentation"] },
+        t2: { title: "Plateforme Growth", cat: "Mobile", desc: "Gérez votre business entier depuis votre poche. Apps iOS et Android pour une flexibilité totale.", f: ["Tout du Starter", "App business iOS", "App business Android", "Notifications push", "Workflows optimisés mobile", "Sync temps réel"] },
+        t3: { title: "Plateforme Pro", cat: "Desktop", desc: "Expérience logiciel desktop professionnelle. Applications Mac et Windows complètes.", f: ["Tout du Starter", "App business Mac", "App business Windows", "Raccourcis clavier", "Notifications desktop", "Multi-fenêtres"] },
+        t4: { title: "Plateforme Ultimate", cat: "Complet", desc: "Tout, partout. Site web, système business, apps mobiles, desktop et intégrations personnalisées.", f: ["Tout combiné", "Apps iOS + Android", "Apps Mac + Windows", "Intégrations tierces", "Sécurité avancée", "Support prioritaire SLA"] }
       },
       pricing_sec: {
         title: "Sécurité Intelligente",

@@ -4,16 +4,14 @@ import { MenuToggleIcon } from './components/ui/menu-toggle-icon';
 import { Component as TextRoll } from './components/ui/animated-menu';
 import { RollingTextList } from './components/ui/rolling-list';
 import { LanguageSelector } from './components/ui/language-selector-dropdown';
+import ScrollToTop from './components/ui/scroll-to-top';
 import WebDesignPricing from './components/web-design-pricing';
-import AiServicesPricing from './components/ai-services-pricing';
 import BusinessSystemsPricing from './components/business-systems-pricing';
-import SmartSecurityPricing from './components/smart-security-pricing';
-import MobileAppsPricing from './components/mobile-apps-pricing';
-import B2BPricing from './components/b2b-pricing';
+import PlatformsPricing from './components/platforms-pricing';
 import ContactPage from './components/contact-page';
 import { useTranslation } from 'react-i18next';
 
-type Page = 'home' | 'services' | 'contact' | 'web-design' | 'ai-services' | 'business-systems' | 'smart-security' | 'mobile-apps' | 'b2b-services';
+type Page = 'home' | 'services' | 'contact' | 'web-design' | 'business-systems' | 'platforms';
 
 export default function App() {
   const { t } = useTranslation();
@@ -33,18 +31,12 @@ export default function App() {
   };
 
   const handleServiceClick = (id: number) => {
-    // ID 1 corresponds to "AI Services"
-    if (id === 1) handleNavigation('ai-services');
-    // ID 2 corresponds to "Web Design & Dev"
-    if (id === 2) handleNavigation('web-design');
-    // ID 3 corresponds to "Mobile Apps"
-    if (id === 3) handleNavigation('mobile-apps');
-    // ID 4 corresponds to "Business Systems"
-    if (id === 4) handleNavigation('business-systems');
-    // ID 5 corresponds to "B2B" (formerly Tech Support)
-    if (id === 5) handleNavigation('b2b-services');
-    // ID 6 corresponds to "Smart Security"
-    if (id === 6) handleNavigation('smart-security');
+    // ID 1 corresponds to "Website Solutions"
+    if (id === 1) handleNavigation('web-design');
+    // ID 2 corresponds to "Business Systems"
+    if (id === 2) handleNavigation('business-systems');
+    // ID 3 corresponds to "Complete Platforms"
+    if (id === 3) handleNavigation('platforms');
   };
 
   return (
@@ -131,20 +123,6 @@ export default function App() {
           />
         )}
 
-        {currentPage === 'ai-services' && (
-          <AiServicesPricing 
-            onBack={() => handleNavigation('services')}
-            onBook={() => handleNavigation('contact')}
-          />
-        )}
-
-        {currentPage === 'mobile-apps' && (
-          <MobileAppsPricing 
-            onBack={() => handleNavigation('services')}
-            onBook={() => handleNavigation('contact')}
-          />
-        )}
-
         {currentPage === 'business-systems' && (
           <BusinessSystemsPricing 
             onBack={() => handleNavigation('services')}
@@ -152,15 +130,8 @@ export default function App() {
           />
         )}
 
-        {currentPage === 'b2b-services' && (
-          <B2BPricing 
-            onBack={() => handleNavigation('services')}
-            onBook={() => handleNavigation('contact')}
-          />
-        )}
-        
-        {currentPage === 'smart-security' && (
-          <SmartSecurityPricing 
+        {currentPage === 'platforms' && (
+          <PlatformsPricing 
             onBack={() => handleNavigation('services')}
             onBook={() => handleNavigation('contact')}
           />
@@ -170,6 +141,9 @@ export default function App() {
           <ContactPage onBack={() => handleNavigation('home')} />
         )}
       </div>
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 }
