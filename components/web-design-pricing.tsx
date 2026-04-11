@@ -8,8 +8,6 @@ interface PricingTier {
   id: string;
   title: string;
   category: string;
-  price: string;
-  delivery: string;
   description: string;
   features: string[];
 }
@@ -22,8 +20,6 @@ export default function WebDesignPricing({ onBack, onBook }: { onBack: () => voi
       id: "01",
       title: t('pricing_web.t1.title'),
       category: t('pricing_web.t1.cat'),
-      price: t('common.custom_quote'),
-      delivery: "10-15 Days",
       description: t('pricing_web.t1.desc'),
       features: t('pricing_web.t1.f', { returnObjects: true }) as string[]
     },
@@ -31,8 +27,6 @@ export default function WebDesignPricing({ onBack, onBook }: { onBack: () => voi
       id: "02",
       title: t('pricing_web.t2.title'),
       category: t('pricing_web.t2.cat'),
-      price: t('common.custom_quote'),
-      delivery: "06-09 Days",
       description: t('pricing_web.t2.desc'),
       features: t('pricing_web.t2.f', { returnObjects: true }) as string[]
     },
@@ -40,8 +34,6 @@ export default function WebDesignPricing({ onBack, onBook }: { onBack: () => voi
       id: "03",
       title: t('pricing_web.t3.title'),
       category: t('pricing_web.t3.cat'),
-      price: t('common.custom_quote'),
-      delivery: "06-09 Days",
       description: t('pricing_web.t3.desc'),
       features: t('pricing_web.t3.f', { returnObjects: true }) as string[]
     },
@@ -49,37 +41,8 @@ export default function WebDesignPricing({ onBack, onBook }: { onBack: () => voi
       id: "04",
       title: t('pricing_web.t4.title'),
       category: t('pricing_web.t4.cat'),
-      price: t('common.custom_quote'),
-      delivery: "06-09 Days",
       description: t('pricing_web.t4.desc'),
       features: t('pricing_web.t4.f', { returnObjects: true }) as string[]
-    },
-    {
-      id: "05",
-      title: t('pricing_web.t5.title'),
-      category: t('pricing_web.t5.cat'),
-      price: t('common.custom_quote'),
-      delivery: "15-30 Days",
-      description: t('pricing_web.t5.desc'),
-      features: t('pricing_web.t5.f', { returnObjects: true }) as string[]
-    },
-    {
-      id: "06",
-      title: t('pricing_web.t6.title'),
-      category: t('pricing_web.t6.cat'),
-      price: t('common.custom_quote'),
-      delivery: "10-45 Days",
-      description: t('pricing_web.t6.desc'),
-      features: t('pricing_web.t6.f', { returnObjects: true }) as string[]
-    },
-    {
-      id: "07",
-      title: t('pricing_web.t7.title'),
-      category: t('pricing_web.t7.cat'),
-      price: t('common.custom_quote'),
-      delivery: "12-20 Weeks",
-      description: t('pricing_web.t7.desc'),
-      features: t('pricing_web.t7.f', { returnObjects: true }) as string[]
     }
   ];
 
@@ -108,10 +71,10 @@ export default function WebDesignPricing({ onBack, onBook }: { onBack: () => voi
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {PRICING_TIERS.map((tier) => (
-                <div key={tier.id} className="group border border-blue-600 dark:border-blue-500 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 bg-neutral-50 dark:bg-neutral-900/50">
-                    <div className="flex justify-between items-start mb-4">
+                <div key={tier.id} className="group border border-blue-600 dark:border-blue-500 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 bg-neutral-50 dark:bg-neutral-900/50">
+                    <div className="mb-4">
                         <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 bg-white dark:bg-black px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-800">
                             {tier.category}
                         </span>
@@ -121,11 +84,6 @@ export default function WebDesignPricing({ onBack, onBook }: { onBack: () => voi
                     <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6 min-h-[60px]">
                         {tier.description}
                     </p>
-
-                    <div className="mb-6 pb-6 border-b border-neutral-200 dark:border-neutral-800">
-                        <div className="text-2xl font-bold">{tier.price}</div>
-                        <div className="text-xs text-neutral-500 mt-1">{t('common.est_delivery')}: {tier.delivery}</div>
-                    </div>
 
                     <ul className="space-y-3 mb-8">
                         {tier.features.map((feature, i) => (

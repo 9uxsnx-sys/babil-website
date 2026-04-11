@@ -8,7 +8,7 @@ import FAQs from './ui/faqs';
 import { useTranslation } from 'react-i18next';
 
 interface HomePageProps {
-  onNavigate: (page: 'home' | 'services' | 'contact' | 'web-design' | 'business-systems' | 'platforms') => void;
+  onNavigate: (page: 'home' | 'services' | 'contact' | 'web-design' | 'business-systems') => void;
 }
 
 export default function HomePage({ onNavigate }: HomePageProps) {
@@ -54,7 +54,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 </button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <ProjectCard 
                     title={t('services_list.web_design')} 
                     category={t('services_list.categories.digital')}
@@ -68,13 +68,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                     price="Business Systems"
                     image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
                     onClick={() => onNavigate('business-systems')}
-                />
-                <ProjectCard 
-                    title={t('services_list.platforms')} 
-                    category={t('services_list.categories.platforms')}
-                    price="Complete Platforms"
-                    image="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&auto=format&fit=crop&q=60"
-                    onClick={() => onNavigate('platforms')}
                 />
             </div>
         </div>

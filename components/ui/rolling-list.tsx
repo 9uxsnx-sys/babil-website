@@ -150,15 +150,6 @@ export function RollingTextList({ onItemClick }: { onItemClick?: (id: number) =>
       color: "blue",
       Icon: Blocks,
     },
-    {
-      id: 3,
-      titleKey: "services_list.platforms",
-      categoryKey: "services_list.categories.platforms",
-      src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&auto=format&fit=crop&q=60",
-      alt: "Complete Platforms",
-      color: "blue",
-      Icon: LayoutGrid,
-    },
   ];
 
   return (

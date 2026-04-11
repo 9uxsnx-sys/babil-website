@@ -7,11 +7,10 @@ import { LanguageSelector } from './components/ui/language-selector-dropdown';
 import ScrollToTop from './components/ui/scroll-to-top';
 import WebDesignPricing from './components/web-design-pricing';
 import BusinessSystemsPricing from './components/business-systems-pricing';
-import PlatformsPricing from './components/platforms-pricing';
 import ContactPage from './components/contact-page';
 import { useTranslation } from 'react-i18next';
 
-type Page = 'home' | 'services' | 'contact' | 'web-design' | 'business-systems' | 'platforms';
+type Page = 'home' | 'services' | 'contact' | 'web-design' | 'business-systems';
 
 export default function App() {
   const { t } = useTranslation();
@@ -35,8 +34,6 @@ export default function App() {
     if (id === 1) handleNavigation('web-design');
     // ID 2 corresponds to "Business Systems"
     if (id === 2) handleNavigation('business-systems');
-    // ID 3 corresponds to "Complete Platforms"
-    if (id === 3) handleNavigation('platforms');
   };
 
   return (
@@ -125,13 +122,6 @@ export default function App() {
 
         {currentPage === 'business-systems' && (
           <BusinessSystemsPricing 
-            onBack={() => handleNavigation('services')}
-            onBook={() => handleNavigation('contact')}
-          />
-        )}
-
-        {currentPage === 'platforms' && (
-          <PlatformsPricing 
             onBack={() => handleNavigation('services')}
             onBook={() => handleNavigation('contact')}
           />

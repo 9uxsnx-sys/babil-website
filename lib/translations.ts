@@ -195,14 +195,11 @@ export const resources = {
       },
       pricing_web: {
         title: "Website Solutions",
-        desc: "Professional websites from simple static pages to complete e-commerce platforms with connected business systems.",
-        t1: { title: "Static Website", cat: "Starter", desc: "Professional multi-page websites with clean design and fast performance. Perfect for establishing your online presence.", f: ["5-10 custom pages", "Mobile-responsive design", "SEO-optimized structure", "Contact forms & integrations", "CDN hosting setup"] },
-        t2: { title: "Dynamic Website", cat: "Growth", desc: "CMS-powered websites you manage yourself. Update content, add pages, publish blog posts from your browser dashboard.", f: ["Everything in Static", "Custom admin dashboard", "Content Management System", "Blog/News publishing", "User registration system", "Training session included"] },
-        t3: { title: "Dynamic + Mobile App", cat: "Pro", desc: "Manage your website from anywhere with iOS and Android apps. Your team gets instant mobile access.", f: ["Everything in Dynamic", "iOS admin app", "Android admin app", "Push notifications", "Mobile-optimized workflows"] },
-        t4: { title: "Dynamic + Desktop App", cat: "Pro", desc: "Professional desktop software for your team. Mac and Windows applications with keyboard shortcuts and notifications.", f: ["Everything in Dynamic", "Mac application", "Windows application", "Keyboard shortcuts", "Desktop notifications"] },
-        t5: { title: "Full Stack Website", cat: "Elite", desc: "Complete ecosystem - web dashboard, mobile apps, and desktop apps all connected to one powerful backend.", f: ["Everything in Dynamic", "iOS + Android apps", "Mac + Windows apps", "Real-time sync across devices", "Role-based access"] },
-        t6: { title: "E-Commerce Website", cat: "Commerce", desc: "Full-featured online stores with product catalogs, shopping carts, secure payments, and order management.", f: ["Custom store design", "Product catalog", "Secure checkout", "Multiple payment gateways", "Customer accounts", "Inventory management"] },
-        t7: { title: "E-Commerce + System", cat: "Commerce Pro", desc: "Ultimate retail platform - your store connected to CRM, inventory, purchasing, and business intelligence.", f: ["Everything in E-Commerce", "Advanced inventory", "CRM integration", "Purchasing management", "Analytics dashboard"] }
+        desc: "Professional websites from simple static pages to complete e-commerce platforms with mobile apps.",
+        t1: { title: "Starter", cat: "Static Website", desc: "Perfect for small businesses and personal brands establishing their online presence. Clean design, fast performance, essential features.", f: ["5–8 custom-designed pages", "Mobile-responsive design", "Fast loading optimization", "Contact form (email / WhatsApp)", "Basic SEO structure", "Domain + hosting setup"] },
+        t2: { title: "Growth", cat: "Dynamic Website (CMS)", desc: "Take control of your content. Add pages, publish blogs, manage everything from your browser dashboard.", f: ["Everything in Starter", "Admin dashboard (manage content)", "Add/edit pages & sections", "Blog / news system", "User accounts (optional)", "Training session included"] },
+        t3: { title: "E-Commerce", cat: "Online Store", desc: "Full-featured online store optimized for Algeria. WhatsApp orders, cash on delivery, wilaya-based delivery pricing.", f: ["Custom storefront homepage", "Product pages with categories & filters", "WhatsApp order button", "Cash on Delivery (COD) checkout", "Order management dashboard", "Export orders to CSV/Excel"] },
+        t4: { title: "Pro", cat: "E-Commerce + Mobile App", desc: "Ultimate e-commerce power. Manage your entire store from your phone with iOS and Android apps.", f: ["Everything in E-Commerce", "iOS + Android admin apps", "Push notifications for new orders", "Manage orders from phone", "Real-time sync across devices", "Wilaya-based delivery pricing", "Priority support & updates"] }
       },
       pricing_ai: {
         title: "Custom Automation",
@@ -214,19 +211,11 @@ export const resources = {
         t5: { title: "Data Vision", cat: "Analytics", desc: "Real-time performance dashboards. Transforms raw data into actionable intelligence.", f: ["Live Dashboards", "Trend Analysis", "Reports"] }
       },
       pricing_biz: {
-        title: "Business Management Systems",
+        title: "Business Systems",
         desc: "Custom software to run your business operations - from CRM and inventory to complete ERP solutions.",
-        t1: { title: "Essential System", cat: "Core", desc: "Replace spreadsheets with a unified system. Customer management, inventory tracking, and invoicing - all connected.", f: ["Customer Relationship Management (CRM)", "Inventory/stock management", "Invoicing & quotes", "Basic reporting & dashboards", "User management & permissions", "Web-based access"] },
-        t2: { title: "Advanced System", cat: "Operations", desc: "Take control of your operations. Multi-location inventory, purchasing workflows, and advanced analytics.", f: ["Everything in Essential", "Multi-location inventory", "Supplier & purchase orders", "Advanced analytics & BI", "Workflow automation", "API access for integrations"] },
-        t3: { title: "Enterprise System", cat: "ERP", desc: "Comprehensive business management. HR, advanced accounting, multi-company support, and complex workflows.", f: ["Everything in Advanced", "Human Resources management", "Advanced accounting", "Multi-company support", "Complex approval workflows", "Dedicated account manager"] }
-      },
-      pricing_platforms: {
-        title: "Complete Business Platforms",
-        desc: "Everything connected - your public website, business system, and team apps working as one unified platform.",
-        t1: { title: "Platform Starter", cat: "Unified", desc: "Your customers see a beautiful website. You manage everything from one powerful backend. The foundation of a connected business.", f: ["Public-facing website", "Business management system", "Web-based admin dashboard", "Customer portal", "Unified database", "Single sign-on", "Training & documentation"] },
-        t2: { title: "Platform Growth", cat: "Mobile", desc: "Manage your entire business from your pocket. iOS and Android apps give your team ultimate flexibility.", f: ["Everything in Starter", "iOS business app", "Android business app", "Push notifications", "Mobile-optimized workflows", "Real-time sync across devices"] },
-        t3: { title: "Platform Pro", cat: "Desktop", desc: "Professional desktop software experience for your headquarters. Full-featured Mac and Windows applications.", f: ["Everything in Starter", "Mac business application", "Windows business application", "Keyboard shortcuts", "Desktop notifications", "Multi-window workspace"] },
-        t4: { title: "Platform Ultimate", cat: "Complete", desc: "Everything, everywhere. Website, business system, mobile apps, desktop apps, and custom integrations.", f: ["Everything combined", "iOS + Android apps", "Mac + Windows apps", "Custom third-party integrations", "Advanced security features", "Priority support with SLA"] }
+        t1: { title: "Business System", cat: "CRM / Inventory", desc: "Replace Excel with a unified system. Customer management, inventory tracking, invoicing - all connected.", f: ["Customer management (CRM)", "Inventory / stock tracking", "Orders & invoicing system", "Dashboard & reports", "User roles & permissions", "Web-based system"] },
+        t2: { title: "Advanced System", cat: "Operations", desc: "Take control of complex operations. Multi-location inventory, purchasing workflows, and advanced analytics.", f: ["Everything in Business System", "Multi-location inventory", "Supplier & purchasing system", "Advanced analytics", "Workflow automation", "API integrations"] },
+        t3: { title: "Enterprise System", cat: "ERP", desc: "Comprehensive business management for large enterprises. HR, accounting, multi-company support.", f: ["Everything in Advanced", "Human Resources management", "Accounting system", "Multi-company support", "Approval workflows", "Dedicated support"] }
       },
       pricing_sec: {
         title: "Smart Security",
@@ -449,14 +438,11 @@ export const resources = {
       },
       pricing_web: {
         title: "Solutions Web",
-        desc: "Des sites web professionnels allant des pages statiques simples aux plateformes e-commerce complètes avec systèmes business connectés.",
-        t1: { title: "Site Statique", cat: "Starter", desc: "Sites web multi-pages professionnels avec un design épuré et des performances rapides. Parfait pour établir votre présence en ligne.", f: ["5-10 pages personnalisées", "Design adaptatif mobile", "Structure optimisée SEO", "Formulaires de contact", "Hébergement CDN"] },
-        t2: { title: "Site Dynamique", cat: "Growth", desc: "Sites web avec CMS que vous gérez vous-même. Mettez à jour le contenu, ajoutez des pages, publiez des articles depuis votre tableau de bord.", f: ["Tout du Site Statique", "Tableau de bord admin", "Système de Gestion de Contenu", "Publication Blog/News", "Système d'inscription", "Session de formation"] },
-        t3: { title: "Dynamique + App Mobile", cat: "Pro", desc: "Gérez votre site web de n'importe où avec des apps iOS et Android. Votre équipe a un accès mobile instantané.", f: ["Tout du Site Dynamique", "App admin iOS", "App admin Android", "Notifications push", "Workflows optimisés mobile"] },
-        t4: { title: "Dynamique + App Desktop", cat: "Pro", desc: "Logiciel desktop professionnel pour votre équipe. Applications Mac et Windows avec raccourcis clavier et notifications.", f: ["Tout du Site Dynamique", "Application Mac", "Application Windows", "Raccourcis clavier", "Notifications desktop"] },
-        t5: { title: "Site Full Stack", cat: "Elite", desc: "Écosystème complet - tableau de bord web, apps mobiles et desktop, tous connectés à un backend puissant.", f: ["Tout du Site Dynamique", "Apps iOS + Android", "Apps Mac + Windows", "Synchronisation temps réel", "Accès basé sur les rôles"] },
-        t6: { title: "Site E-Commerce", cat: "Commerce", desc: "Boutiques en ligne complètes avec catalogues produits, paniers d'achat, paiements sécurisés et gestion des commandes.", f: ["Design boutique personnalisé", "Catalogue produits", "Paiement sécurisé", "Passerelles de paiement", "Comptes clients", "Gestion des stocks"] },
-        t7: { title: "E-Commerce + Système", cat: "Commerce Pro", desc: "Plateforme retail ultime - votre boutique connectée à CRM, stocks, achats et intelligence business.", f: ["Tout du E-Commerce", "Stocks avancés", "Intégration CRM", "Gestion des achats", "Tableaux de bord analytiques"] }
+        desc: "Sites web professionnels des pages statiques simples aux plateformes e-commerce complètes avec apps mobiles.",
+        t1: { title: "Starter", cat: "Site Statique", desc: "Parfait pour petites entreprises et marques personnelles établissant leur présence en ligne. Design épuré, performances rapides, fonctionnalités essentielles.", f: ["5–8 pages personnalisées", "Design adaptatif mobile", "Optimisation chargement rapide", "Formulaire contact (email / WhatsApp)", "Structure SEO basique", "Configuration domaine + hébergement"] },
+        t2: { title: "Growth", cat: "Site Dynamique (CMS)", desc: "Prenez le contrôle de votre contenu. Ajoutez pages, publiez blogs, gérez tout depuis votre tableau de bord.", f: ["Tout du Starter", "Tableau de bord admin (gérer contenu)", "Ajouter/modifier pages & sections", "Système blog / actualités", "Comptes utilisateurs (optionnel)", "Session formation incluse"] },
+        t3: { title: "E-Commerce", cat: "Boutique En Ligne", desc: "Boutique en ligne complète optimisée pour l'Algérie. Commandes WhatsApp, paiement à la livraison, tarifs livraison par wilaya.", f: ["Page d'accueil boutique personnalisée", "Pages produits avec catégories & filtres", "Bouton commande WhatsApp", "Paiement à la livraison (COD)", "Tableau de bord gestion commandes", "Export commandes CSV/Excel"] },
+        t4: { title: "Pro", cat: "E-Commerce + App Mobile", desc: "Puissance e-commerce ultime. Gérez toute votre boutique depuis votre téléphone avec apps iOS et Android.", f: ["Tout du E-Commerce", "Apps admin iOS + Android", "Notifications push nouvelles commandes", "Gérer commandes depuis téléphone", "Synchronisation temps réel", "Tarifs livraison par wilaya", "Support prioritaire & mises à jour"] }
       },
       pricing_ai: {
         title: "Automatisation Sur Mesure",
@@ -468,19 +454,11 @@ export const resources = {
         t5: { title: "Vision Data", cat: "Analytique", desc: "Tableaux de bord de performance en temps réel. Transforme les données brutes en intelligence exploitable.", f: ["Tableaux Bord Live", "Analyse Tendances", "Rapports"] }
       },
       pricing_biz: {
-        title: "Systèmes de Gestion Business",
-        desc: "Des logiciels personnalisés pour gérer vos opérations - de la gestion de la relation client aux solutions ERP complètes.",
-        t1: { title: "Système Essentiel", cat: "Core", desc: "Remplacez les feuilles de calcul par un système unifié. Gestion des clients, stocks et facturation - tous connectés.", f: ["Gestion Relation Client (CRM)", "Gestion des stocks", "Facturation & devis", "Tableaux de bord basiques", "Gestion des utilisateurs", "Accès web"] },
-        t2: { title: "Système Avancé", cat: "Opérations", desc: "Prenez le contrôle de vos opérations. Stocks multi-sites, workflows d'achats et analytiques avancées.", f: ["Tout du Système Essentiel", "Stocks multi-sites", "Commandes fournisseurs", "Analytiques & BI avancés", "Automatisation workflows", "Accès API"] },
-        t3: { title: "Système Entreprise", cat: "ERP", desc: "Gestion business complète. RH, comptabilité avancée, multi-entreprise et workflows complexes.", f: ["Tout du Système Avancé", "Gestion des Ressources Humaines", "Comptabilité avancée", "Multi-entreprise", "Workflows approbation complexes", "Manager dédié"] }
-      },
-      pricing_platforms: {
-        title: "Plateformes Business Complètes",
-        desc: "Tout connecté - votre site web public, système business et apps équipe travaillant comme une plateforme unifiée.",
-        t1: { title: "Plateforme Starter", cat: "Unifié", desc: "Vos clients voient un beau site web. Vous gérez tout depuis un backend puissant. La fondation d'une entreprise connectée.", f: ["Site web public", "Système de gestion business", "Tableau de bord web", "Portail client", "Base de données unifiée", "Connexion unique", "Formation & documentation"] },
-        t2: { title: "Plateforme Growth", cat: "Mobile", desc: "Gérez votre business entier depuis votre poche. Apps iOS et Android pour une flexibilité totale.", f: ["Tout du Starter", "App business iOS", "App business Android", "Notifications push", "Workflows optimisés mobile", "Sync temps réel"] },
-        t3: { title: "Plateforme Pro", cat: "Desktop", desc: "Expérience logiciel desktop professionnelle. Applications Mac et Windows complètes.", f: ["Tout du Starter", "App business Mac", "App business Windows", "Raccourcis clavier", "Notifications desktop", "Multi-fenêtres"] },
-        t4: { title: "Plateforme Ultimate", cat: "Complet", desc: "Tout, partout. Site web, système business, apps mobiles, desktop et intégrations personnalisées.", f: ["Tout combiné", "Apps iOS + Android", "Apps Mac + Windows", "Intégrations tierces", "Sécurité avancée", "Support prioritaire SLA"] }
+        title: "Systèmes Business",
+        desc: "Logiciels personnalisés pour gérer vos opérations - de la gestion client aux solutions ERP complètes.",
+        t1: { title: "Système Business", cat: "CRM / Stocks", desc: "Remplacez Excel par un système unifié. Gestion clients, stocks, facturation - tous connectés.", f: ["Gestion clients (CRM)", "Suivi stocks / inventaire", "Système commandes & facturation", "Tableaux de bord & rapports", "Rôles utilisateurs & permissions", "Système web-based"] },
+        t2: { title: "Système Avancé", cat: "Opérations", desc: "Prenez le contrôle d'opérations complexes. Stocks multi-sites, workflows achats, analytiques avancées.", f: ["Tout du Système Business", "Stocks multi-sites", "Système fournisseurs & achats", "Analytiques avancées", "Automatisation workflows", "Intégrations API"] },
+        t3: { title: "Système Entreprise", cat: "ERP", desc: "Gestion business complète pour grandes entreprises. RH, comptabilité, multi-sociétés.", f: ["Tout du Système Avancé", "Gestion Ressources Humaines", "Système comptabilité", "Support multi-sociétés", "Workflows approbation", "Support dédié"] }
       },
       pricing_sec: {
         title: "Sécurité Intelligente",
